@@ -1,0 +1,202 @@
+@use '../styles/vars' as v;
+
+::placeholder {
+    color: v.$color;
+}
+
+.container {
+    max-width: 500px;
+    height: 120px;
+    background-color: v.$card-color;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadein 2s;
+
+   
+
+
+    .search-box {
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-right: 1rem;
+    }
+
+    .search-box input {
+        flex-grow: 2;
+        font-size: 1.5rem;
+        color: v.$color;
+        text-align: left;
+        margin-left: 1rem;
+        border: 0;
+    }
+
+    .Icon {
+        flex-grow: 1;
+        align-self: center;
+        color: v.$color;
+    }
+
+    .search-button {
+        background-color: #e0f4fe;
+        border-radius: 50%;
+        padding:  10px;
+        border: none;
+    }
+
+    .search-button:hover {
+        background-color: v.$color;
+        .Icon {
+            color: white;
+        }
+    }
+
+    .weather-box {
+        display: flex;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 900;
+        color: v.$color;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .city {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+        
+        .wlogo {
+            width: 50%;
+        }
+
+        .temperature {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .weather-description {
+            font-weight: 600;
+        }
+    }
+    
+    .specialInfos {
+        font-family: 'Roboto', sans-serif; 
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+            p {
+            margin-top: 1rem;
+          }
+    }
+   }
+
+   .container-open {
+    max-width: 500px;
+    height: 500px;
+    transition: all 0.5s ease-in-out;
+    background-color: v.$card-color;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: -5px 3px 55px 13px rgba(0,0,0,0.34);
+    -webkit-box-shadow: -5px 3px 55px 13px rgba(0,0,0,0.34);
+    -moz-box-shadow: -5px 3px 55px 13px rgba(0,0,0,0.34);    
+    }
+    
+    .search-box {
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-right: 1rem;
+    }
+
+    .search-box input {
+        flex-grow: 2;
+        font-size: 1.5rem;
+        color: v.$color;
+        text-align: left;
+        margin-left: 1rem;
+        border: 0;
+    }
+
+    .Icon {
+        flex-grow: 1;
+        align-self: center;
+        color: v.$color;
+    }
+
+    .search-button {
+        background-color: #e0f4fe;
+        border-radius: 50%;
+        padding:  10px;
+        border: none;
+    }
+
+    .search-button:hover {
+        background-color: v.$color;
+        .Icon {
+            color: white;
+        }
+    }
+
+    .weather-box {
+        display: flex;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 900;
+        color: v.$color;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .city {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            animation: fadein 2s;
+        }
+        
+        .wlogo {
+            animation: fadein 3s;
+        }
+
+        .temperature {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: fadein 2s;
+        }
+
+        .weather-description {
+            font-weight: 600;
+            animation: fadein 3s;
+        }
+    }
+    
+    .specialInfos {
+        font-family: 'Roboto', sans-serif; 
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        animation: fadein 4s;
+
+            p {
+            margin-top: 1rem;
+          }
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 100;
+        }   
+    }
+   
+

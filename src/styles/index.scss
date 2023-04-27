@@ -1,0 +1,14 @@
+@use './vars' as v;
+
+* {
+    font-family: 'Roboto', sans-serif;  
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: v.$body-color;  
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

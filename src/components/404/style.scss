@@ -1,0 +1,15 @@
+@use '../../styles/vars' as v;
+.error404 {
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 3rem;
+    text-align: center;
+    color: v.$color;
+
+}
+
+.sadLogo {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    color: v.$color
+}
