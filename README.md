@@ -4,8 +4,11 @@ I created a simple weather application using HTML, CSS, REACT, and the OpenWeath
 
 ## INSTALLATION
 
+Enter your API key in app.jsx
+[https://openweathermap.org/api](https://openweathermap.org/api)
 ```
 npm install
+
 
 npm run dev
 

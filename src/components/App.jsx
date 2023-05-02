@@ -8,7 +8,7 @@ import axios from 'axios';
 import Error404 from './404/Error404';
 
 function App() {
-  const APIKEY = '61bdfa6e164348f8ab6f7a78a88c75cc';
+  const APIKEY = 'YOUR_API_KEY';
 
   const [searchValue, setSearchValue] = useState('');
   const [MeteoData, setMeteoData] = useState(null);
